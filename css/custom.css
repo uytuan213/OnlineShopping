@@ -1,0 +1,20 @@
+============================Custom Bootstrap============================
+.navbar-inverse{
+	border-radius: 0;
+}
+.navbar{
+	border-radius: 0;
+}
+.btn{
+	margin-top: 8px;
+	border: 0px;
+}
+.btn-default{
+	color: white;
+	background-color: transparent;
+}
+============================Custom Fontawesome============================
+.fas{
+	margin: 5px;
+	padding: 5px;
+}
