@@ -71,7 +71,6 @@
 				</div>		
 			</div>
 		</nav>
-		
 	</header>
 	<section id="content">
 		<!-- Thumbnail -->
