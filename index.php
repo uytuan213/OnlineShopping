@@ -1,3 +1,4 @@
+<!-- Add initial DB and session -->
 <?php 
 	include_once('db_connect.php');
 	session_start();
@@ -70,21 +71,10 @@
 				</div>		
 			</div>
 		</nav>
-
-		<!-- <div id="top-page">
-			<img id="top-banner" src="img/banner2.jpg">
-			<br>
-			<div id="top-title">
-				<img src="img/Icon.jpg" id="shop-icon">
-				<h2 id="shop-name">Tech House</h2>	
-			</div>
-		</div> -->
-		<!-- <div id="shop-banner">
-			<h1 id="shop-title">Tony Tech House</h1>
-		</div> -->
 		
 	</header>
 	<section id="content">
+		<!-- Thumbnail -->
 		<!-- Carosel -->
 		<div class="container-fluid">
 			<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
@@ -127,6 +117,7 @@
 			    </a>
 			</div>
 
+		<!-- Display Categories -->
 		<div class="container">
 		<section id="category">
 			<h1 id="title" class="text-center">Category</h1>
@@ -152,9 +143,9 @@
 				</div>
 				<div class="text-right"><a href="cat.php">See more</a></div>
 			</div>
-			
-			<!-- <hr> -->
 		</section>
+
+		<!-- Display brands -->
 		<section id="brands">
 			<h1 id="title" class="text-center">Brands</h1>
 			<hr>
@@ -178,8 +169,9 @@
 			<div class="text-right">
 				<a href="brand.php">See more</a>
 			</div>
-			<!-- <hr> -->
 		</section>
+
+
 		<section id="info">
 			<h1 id="title">About me</h1>
 			<hr>
