@@ -62,7 +62,7 @@ function signUpValidate(){
 		let error_message = document.getElementById("message");
 		message = "<i>" + message + "</i>";
 		error_message.innerHTML = message;
-		error_message.style.border = "1px solid red";
+		// error_message.style.border = "1px solid red";
 		// error_message.parentElement.display = "initial";
 		// alert(document.getElementById("message").innerHTML);
 	}
@@ -76,13 +76,10 @@ function logInValidate(){
 	let message = "";
 	if (username.value == "") {
 		message += "Username is required<br>";
-	}	
-
+	}
 	if (pwd.value == "") {
 		message += "Password is required<br>";
 	}
-
-	
 	if(message == ""){
 		form.submit();
 	}
@@ -90,6 +87,54 @@ function logInValidate(){
 		let error_message = document.getElementById("message");
 		message = "<i>" + message + "</i>";
 		error_message.innerHTML = message;
-		error_message.style.border = "1px solid red";
 	}
+}
+// Function to validate user change to update to db
+function changeInfoValidate(){
+	let inputs = document.getElementsByTagName("input");
+	let messsage = "";
+	for (var i = 0; i < inputs.length; i++) {
+		if (inputs[i].value == "") {
+			message = "All input must be filled";
+			break;
+		}
+	}
+	if (message == "") {
+		document.getElementById("infoForm").submit();
+	}
+	else{
+		let error_message = document.getElementById("message");
+		message = "<i>" + message + "</i>";
+		error_message.innerHTML = message;
+	}
+}
+
+// Function to validate user's new password
+function changePasswordValidate(){
+	let inputs = document.getElementsByTagName("input");
+	let message = "";
+	//var to check if there is any empty input field
+	let checkEmpty = true;
+	for (var i = 0; i < inputs.length; i++) {
+		if (inputs[i].value == "") {
+			message = "All input must be filled";
+			checkEmpty = false;
+			break;
+		}
+	}
+	if (checkEmpty) {
+		let pwd = document.getElementById("txtNewPassword");
+		let confirmPwd = document.getElementById("txtConfirmPassword");
+		if (pwd.value != confirmPwd.value) {
+			message = "New password and confirm password are not matched";
+		}
+	}
+	if (message == "") {
+		document.getElementById("changePasswordForm").submit();
+	}
+	else{
+		let error_message = document.getElementById("message");
+		error_message.innerHTML = "<i>" + message + "</i>";
+	}
+
 }
