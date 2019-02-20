@@ -1,3 +1,8 @@
+body{
+	position: relative;
+	min-height: 100vh;
+	padding-bottom: 50px;
+}
 #nav-logo{
 	width: 40px;
 	height: 40px;
@@ -12,13 +17,6 @@
 	width: 150px;
 	height: 150px;
 }
-.carousel{
-	/*width: 1320px;
-	height: 460px;*/
-}
-/*.form-group{
-	width: 200px;
-}*/
 .error_message{
 	color: red;
 	font-size: 13px;
@@ -26,4 +24,18 @@
 	padding: 10px;
 	margin-top: 20px;
 	/*width: 500px;*/
+}
+footer{
+	margin-top: 30px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+footer div{
+	width: 100%;
+	background-color: #222222;
+}
+footer p{
+	padding-top: 10px;
+	color: white;
 }
