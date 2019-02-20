@@ -39,15 +39,15 @@
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="index.php"><i class="fas fa-home"></i></a></li>
 						<li><a href="#">Shop</a></li>
-						<li><a href="#category">Category</a></li>
-						<li><a href="#brands">Brands</a></li>	
+						<li><a href="cat.php">Category</a></li>
+						<li><a href="brand.php">Brands</a></li>	
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 					<?php 
 					if (!isset($_SESSION['firstName'])) {
 					 ?>
 						<li><a href="signup.php"><i class="fas fa-user-plus"></i></i> Sign up</a></li>
-						<li><a href="login.php"><i class="fas fa-sign-in-alt"></i> Sign in</a></li>
+						<li><a href="login.php"><i class="fas fa-sign-in-alt"></i> Log in</a></li>
 					<?php 
 					}
 					else{
@@ -60,13 +60,14 @@
 								</button>
 							    <ul class="dropdown-menu">
 							      <li><a href="account.php">Account</a></li>
+							      <li><a href="changePassword.php">Change password</a></li>
 							      <li class="divider"></li>
-							      <li><a href="#">Sign out</a></li>
+							      <li><a href="logout.php">Log out</a></li>
 							    </ul>
 							</div>
 					 	</li>
-						<li><a href="cart.php"><i class="fas fa-shopping-cart"></i></a></li>
 					<?php } ?>
+						<li><a href="cart.php"><i class="fas fa-shopping-cart"></i></a></li>
 					</ul>
 				</div>		
 			</div>
@@ -184,7 +185,7 @@
 		</div>
 	</section>
 	<footer>
-		<div class="container text-right">
+		<div class="container-fluid text-right">
 			<p>Copyright&copy; Tony Trieu 2019</p>
 		</div>
 	</footer>
